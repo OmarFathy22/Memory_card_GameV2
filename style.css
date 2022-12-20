@@ -1,0 +1,71 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  justify-content: center;
+  background-color: rgb(44, 42, 42);
+}
+.parent{
+    margin-top: 7%;
+}
+.contianer {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  height: 450px;
+  width: 400px;
+  padding-left: 10px;
+}
+.card {
+  height: 90px;
+  width: 80px;
+  display: flex;
+  border-radius: 8px;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(156, 232, 232);
+  cursor: pointer;
+  transition: 0.4s all ease;
+}
+  
+.card img {
+  height: 50px;
+  width: 50px;
+  opacity: 0;
+  transition: 0.4s all ease;
+}
+.card.clicked {
+  background-color: orangered;
+}
+.card.clicked img {
+  opacity: 1 !important; 
+}
+.card.checked {
+  background-color: rgb(199, 216, 11);
+}
+.card.checked img {
+  opacity: 1 !important;
+}
+#Time h1{
+    display: inline;
+    color: white;
+}
+#Time {
+    border: 1px solid white;
+    border-radius: 5px;
+    width: 50%;
+    padding: 10px;
+    text-align: center;
+    margin: 0 auto;
+}
+.hid{
+  opacity: 1;
+}
+#Time{
+  cursor: pointer;
+}
+
+.shake{animation:shake .8s cubic-bezier(.455,.03,.515,.955) both}
+ @keyframes shake{0%,100%{transform:translateX(0)}10%,30%,50%,70%{transform:translateX(-10px)}20%,40%,60%{transform:translateX(10px)}80%{transform:translateX(8px)}90%{transform:translateX(-8px)}}
