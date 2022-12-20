@@ -79,7 +79,6 @@ function timer() {
         setTimeout(() => {
           window.location.reload();
         }, 3000);
-        shuffleCard();
         clearInterval(myInterval);
       }
     } else {
@@ -88,7 +87,6 @@ function timer() {
         window.location.reload();
       }, 3000);
       forTime.innerHTML = `Time Up`;
-      shuffleCard();
     }
     count--;
   }
